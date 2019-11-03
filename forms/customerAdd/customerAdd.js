@@ -1,7 +1,7 @@
 
 customerAdd.onshow=function(){
     let query = "SELECT name from customer"
-  req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=mlc55572&pass=cHarliE125!database=amh86170&query=" + btnQuery)
+  req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=mlc55572&pass=cHarliE125!database=mlc55572&query=" + query)
     
     if (req1.status == 200) { //transit worked.
         results = JSON.parse(req1.responseText)
@@ -25,11 +25,11 @@ customerAdd.onshow=function(){
 }
 btnCompanies11.onclick=function(){
       btnCheck = inptState11.value
-  let btnQuery = "INSERT INTO customer VALUES (20, "Jesse Antiques", '1113 F St', 'Omaha','NE', '68178"); 
-  req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=mlc55572&pass=cHarliE125!database=amh86170&query=" + btnQuery)
+  let btnQuery = "INSERT INTO customer VALUES (20, 'Jesse Antiques', '1113 F St', 'Omaha','NE', '68178')";
+  req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=mlc55572&pass=cHarliE125!database=mlc55572&query=" + btnQuery)
 
     let query = "SELECT name from customer"
-  req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=mlc55572&pass=cHarliE125!&database=amh86170&query=" + query)
+  req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=mlc55572&pass=cHarliE125!database=mlc55572&query=" + query)
     
     if (req1.status == 200) { //transit worked.
         results = JSON.parse(req1.responseText)
